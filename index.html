@@ -1,0 +1,1793 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YATCH.TZ â€” Yacht Dar es Salaam & Zanzibar ðŸ‡¹ðŸ‡¿ | Helicopter ðŸš</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+    }
+    .font-serif-italic {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Well-Arranged Translucent Sky Title Fade on Hero */
+    .sky-title-fade {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.99) 0%, rgba(241, 245, 252, 0.88) 56%, rgba(196, 210, 232, 0.42) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.03em;
+    }
+
+    /* Frosted Glass Card on Hero */
+    .lunar-glass {
+      background: linear-gradient(145deg, rgba(255, 238, 214, 0.58) 0%, rgba(226, 232, 245, 0.5) 52%, rgba(196, 206, 235, 0.58) 100%);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: 0 24px 60px -12px rgba(10, 15, 35, 0.45), inset 0 1px 1.5px rgba(255, 255, 255, 0.8);
+    }
+
+    /* Slow Cinematic Breathing Motion on Hero Image */
+    @keyframes cinemaMotion {
+      0% { transform: scale(1.01) translate3d(0px, 0px, 0px); }
+      50% { transform: scale(1.055) translate3d(-6px, -4px, 0px); }
+      100% { transform: scale(1.01) translate3d(0px, 0px, 0px); }
+    }
+    .cinema-alive {
+      animation: cinemaMotion 18s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    /* REAL SHELL & CRAB PHOTOGRAPHIC SAND BACKGROUND FOR LOWER PAGES */
+    .real-crab-shell-bg {
+      background-image:
+        linear-gradient(180deg, rgba(250, 244, 232, 0.72) 0%, rgba(250, 244, 232, 0.58) 50%, rgba(250, 244, 232, 0.74) 100%),
+        url('/real_sand_crab_shells_bg_1793212415927.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Gentle Floating & Breathing Animations */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(1.5deg); }
+    }
+    .shell-float {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+
+    @keyframes bgDrift {
+      0%, 100% { transform: scale(1.01) translate(0px, 0px); }
+      50% { transform: scale(1.04) translate(-6px, -4px); }
+    }
+    .bg-drift {
+      animation: bgDrift 16s ease-in-out infinite;
+    }
+
+    /* Scroll-Reveal Animation Across Entire Page */
+    .reveal-section {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Card & Gallery Hover Animations */
+    .card-alive {
+      transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .card-alive:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 26px 58px -14px rgba(14, 58, 83, 0.25);
+    }
+    .gallery-tilt-left {
+      transition: all 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .gallery-tilt-left:hover {
+      transform: translateY(-7px) rotate(-1.2deg) scale(1.015);
+    }
+    .gallery-tilt-right {
+      transition: all 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .gallery-tilt-right:hover {
+      transform: translateY(-7px) rotate(1.2deg) scale(1.015);
+    }
+
+    /* Continuous Filmstrip Glide */
+    @keyframes marqueeGlide {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .filmstrip-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeGlide 38s linear infinite;
+    }
+    .filmstrip-track:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body id="pageBody" class="bg-[#cfc9c0] text-slate-900 antialiased selection:bg-[#1d1754] selection:text-white p-2 sm:p-6 transition-colors duration-500">
+
+  <!-- =========================================================
+       18+ AGE GATE OVERLAY
+  ========================================================== -->
+  <div id="ageGateModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xl transition-opacity duration-500">
+    <div class="relative w-full max-w-md bg-white/95 backdrop-blur-2xl text-slate-900 border-[6px] border-white rounded-[42px] p-8 sm:p-10 shadow-[0_35px_90px_rgba(0,0,0,0.55)] text-center space-y-5">
+      <div class="mx-auto w-20 h-20 rounded-full overflow-hidden border-2 border-slate-200 bg-white p-1 shadow-md">
+        <img src="./yatch_tz_profile.jpg" alt="@yatch.tz Logo" class="w-full h-full object-contain rounded-full" />
+      </div>
+
+      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold tracking-widest uppercase">
+        <span>@YATCH.TZ</span>
+        <span>â€¢</span>
+        <span>ZANZIBAR &amp; DAR ES SALAAM ðŸ‡¹ðŸ‡¿</span>
+      </div>
+
+      <div class="space-y-2">
+        <h2
+          class="text-2xl sm:text-3xl font-bold tracking-tight leading-tight text-slate-900"
+          data-en="Leave the Shore Behind."
+          data-sw="Achana na Ufukwe, Furahia Bahari."
+        >
+          Leave the Shore Behind.
+        </h2>
+        <p
+          class="text-xs sm:text-sm text-slate-500 leading-relaxed"
+          data-en="Welcome to Yatch.tz â€” Yacht Dar es Salaam &amp; Zanzibar ðŸ‡¹ðŸ‡¿ and Helicopter ðŸš charters. Reserved for adults 18 and older."
+          data-sw="Karibu Yatch.tz â€” Ukodishaji wa Yati za Kifahari Dar es Salaam &amp; Zanzibar ðŸ‡¹ðŸ‡¿ pamoja na Helikopta ðŸš. Kwa watu wazima wenye miaka 18+."
+        >
+          Welcome to Yatch.tz â€” Yacht Dar es Salaam &amp; Zanzibar ðŸ‡¹ðŸ‡¿ and Helicopter ðŸš charters. Reserved for adults 18 and older.
+        </p>
+      </div>
+
+      <button
+        onclick="closeAgeGate()"
+        class="w-full py-4 px-6 rounded-full bg-[#1d1754] hover:bg-[#28206f] text-white font-semibold text-xs sm:text-sm tracking-wider uppercase shadow-lg transition cursor-pointer"
+        data-en="I AM 18+ â€” ENTER"
+        data-sw="NINA MIAKA 18+ â€” INGIA"
+      >
+        I AM 18+ â€” ENTER
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       HIGH-RESOLUTION PHOTO LIGHTBOX MODAL
+  ========================================================== -->
+  <div id="photoModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-slate-950/85 backdrop-blur-xl" onclick="closePhotoModal()">
+    <div class="relative max-w-4xl w-full bg-white rounded-[36px] p-3 shadow-2xl" onclick="event.stopPropagation()">
+      <button onclick="closePhotoModal()" class="absolute top-6 right-6 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-slate-900 flex items-center justify-center text-xs font-bold shadow cursor-pointer">
+        âœ•
+      </button>
+      <img id="modalImg" src="./zanzibar_sandbank_yacht_empty_1793211653868.jpg" alt="Zanzibar & Dar Beach Yacht" class="w-full max-h-[78vh] object-cover rounded-[28px]" />
+      <div class="px-4 py-3 flex items-center justify-between text-xs text-slate-600">
+        <span id="modalCaption" class="font-bold text-slate-900">Zanzibar White Sandbank &amp; Flagship Yacht</span>
+        <span>@yatch.tz â€¢ +255 693 228 345</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       LIVE INSTAGRAM VIDEO / REEL PLAYER MODAL
+  ========================================================== -->
+  <div id="reelModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-xl" onclick="closeReelModal()">
+    <div class="relative w-full max-w-[420px] bg-white rounded-[36px] overflow-hidden shadow-2xl border-4 border-white" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between px-5 py-3.5 border-b border-slate-100">
+        <div class="flex items-center gap-2.5">
+          <img src="./yatch_tz_profile.jpg" alt="@yatch.tz" class="w-9 h-9 rounded-full object-contain bg-white border border-slate-200 p-0.5" />
+          <div class="text-xs">
+            <div class="font-bold text-slate-900">@yatch.tz âœ“</div>
+            <div class="text-slate-400">Yacht Dar es Salaam &amp; Zanzibar ðŸ‡¹ðŸ‡¿ | Helicopter ðŸš</div>
+          </div>
+        </div>
+        <button onclick="closeReelModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center text-xs font-bold cursor-pointer">
+          âœ•
+        </button>
+      </div>
+
+      <div class="w-full h-[540px] bg-black">
+        <iframe
+          id="igEmbedFrame"
+          src=""
+          class="w-full h-full border-0"
+          allowtransparency="true"
+          allow="encrypted-media; autoplay; clipboard-write"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MAIN CONTAINER
+  ========================================================== -->
+  <main class="max-w-[1380px] mx-auto space-y-12">
+
+    <!-- =======================================================
+         1. CLEAN HERO SECTION (OFFICIAL LOGO + SWAHILI BUTTON + SIMPLE NAVBAR)
+    ======================================================== -->
+    <div id="outerFrame" class="relative bg-white rounded-[48px] p-[10px] sm:p-[12px] shadow-[0_30px_90px_-15px_rgba(0,0,0,0.32)] transition-colors duration-500">
+
+      <div class="relative rounded-[38px] overflow-hidden min-h-[760px] lg:h-[830px] w-full bg-slate-900 select-none">
+
+        <!-- 8K NO-PEOPLE HERO PHOTOGRAPHY -->
+        <img
+          id="heroPhoto"
+          src="./futuristic_yacht_twilight_1793189124619.jpg"
+          alt="Yatch.tz Flagship Superyacht"
+          class="absolute inset-0 w-full h-full object-cover object-center cinema-alive transition-opacity duration-700"
+        />
+
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#3b5278]/30 via-transparent to-slate-950/45"></div>
+
+        <!-- =====================================================
+             SIMPLE, MINIMAL TOP NAVBAR WITH OFFICIAL @YATCH.TZ LOGO & SWAHILI BUTTON
+        ====================================================== -->
+        <div class="relative z-30 flex items-start justify-between w-full">
+
+          <!-- Top-Left Pill: Official @yatch.tz Logo + Gallery Link -->
+          <div class="pt-5 pl-5 sm:pt-6 sm:pl-8 flex items-center gap-2.5">
+            <a
+              href="#social-media"
+              title="@yatch.tz Official Logo"
+              class="w-12 h-12 rounded-full bg-white p-1 shadow-lg border-2 border-white hover:scale-105 transition flex items-center justify-center shrink-0"
+            >
+              <img src="./yatch_tz_profile.jpg" alt="Yatch.tz Logo" class="w-full h-full object-contain rounded-full" />
+            </a>
+
+            <a
+              href="#photos-videos"
+              class="inline-flex items-center justify-between min-w-[115px] sm:min-w-[140px] px-5 py-3.5 rounded-full bg-white/95 hover:bg-white text-slate-900 text-xs sm:text-sm font-semibold shadow-lg transition duration-300"
+            >
+              <span class="text-amber-500 text-sm">â†–</span>
+              <span data-en="Gallery" data-sw="Picha">Gallery</span>
+              <span class="w-2"></span>
+            </a>
+          </div>
+
+          <!-- Top-Center Sculpted White Cutout Bar (Official Logo + Simple 2-Word Items) -->
+          <div class="hidden lg:flex items-start relative -mt-[1px]">
+            <svg class="w-12 h-16 text-white fill-current -mr-[1px]" viewBox="0 0 48 64" preserveAspectRatio="none">
+              <path d="M0,0 L48,0 L48,64 C24,64 24,0 0,0 Z" />
+            </svg>
+
+            <div class="bg-white text-slate-900 h-16 px-10 xl:px-14 flex items-center gap-10 xl:gap-12 rounded-b-[32px] shadow-sm">
+              <!-- Official Yatch.tz Logo Badge inside Center Bar -->
+              <a href="#social-media" class="flex items-center gap-2.5 pr-2 border-r border-slate-100">
+                <img src="./yatch_tz_profile.jpg" alt="Yatch.tz Logo" class="w-11 h-11 rounded-full object-contain bg-white border border-slate-200 p-0.5 shadow-sm" />
+                <div class="text-left">
+                  <div class="text-xs font-extrabold text-slate-900 leading-none">Yatch.tz</div>
+                  <div class="text-xs text-amber-600 font-semibold mt-0.5">ðŸ‡¹ðŸ‡¿ Official</div>
+                </div>
+              </a>
+
+              <div onclick="switchScene((activeScene + 1) % scenes.length)" class="text-left cursor-pointer">
+                <div class="text-xs text-slate-400 font-medium" data-en="Location" data-sw="Mahali">Location</div>
+                <div id="topLoc" class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">Zanzibar &amp; Dar</div>
+              </div>
+
+              <div onclick="switchScene((activeScene + 1) % scenes.length)" class="text-left cursor-pointer">
+                <div class="text-xs text-slate-400 font-medium" data-en="Service" data-sw="Huduma">Service</div>
+                <div id="topVessel" class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">Yacht &amp; Heli</div>
+              </div>
+
+              <div onclick="switchScene((activeScene + 1) % scenes.length)" class="text-left cursor-pointer">
+                <div class="text-xs text-slate-400 font-medium" data-en="Reviews" data-sw="Maoni">Reviews</div>
+                <div id="topTier" class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">4.9 â˜… (420+)</div>
+              </div>
+            </div>
+
+            <svg class="w-12 h-16 text-white fill-current -ml-[1px]" viewBox="0 0 48 64" preserveAspectRatio="none">
+              <path d="M0,0 L48,0 C24,0 24,64 0,64 Z" />
+            </svg>
+          </div>
+
+          <!-- Top-Right Pills: Swahili Language Switcher Button + Book Button -->
+          <div class="pt-5 pr-5 sm:pt-6 sm:pr-8 flex items-center gap-2.5">
+            <button
+              type="button"
+              id="langToggleBtn"
+              onclick="toggleLanguage()"
+              title="Badili Lugha / Change Language (Kiswahili / English)"
+              class="inline-flex items-center gap-2 px-4 sm:px-5 py-3.5 rounded-full bg-[#1d1754] hover:bg-amber-400 text-white hover:text-slate-900 text-xs sm:text-sm font-bold shadow-lg border-2 border-white transition duration-300 cursor-pointer"
+            >
+              <span>ðŸ‡¹ðŸ‡¿</span>
+              <span id="langToggleLabel">Kiswahili</span>
+            </button>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-between min-w-[105px] sm:min-w-[130px] px-5 py-3.5 rounded-full bg-white/95 hover:bg-white text-slate-900 text-xs sm:text-sm font-semibold shadow-lg transition duration-300"
+            >
+              <span class="w-1"></span>
+              <span data-en="Book" data-sw="Weka Nafasi">Book</span>
+              <span class="text-amber-500 text-sm">â†—</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- LEFT VERTICAL SCULPTED SIDEBAR -->
+        <div class="hidden sm:flex flex-col items-start justify-between absolute left-0 top-[145px] bottom-[36px] z-30 pointer-events-none">
+
+          <div class="flex flex-col items-center gap-2.5 pointer-events-auto">
+            <div class="relative bg-white pr-2 py-1.5 rounded-r-full flex items-center shadow-sm">
+              <a href="#" class="w-10 h-10 rounded-full bg-white text-slate-900 flex items-center justify-center">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+              </a>
+            </div>
+
+            <div class="pl-2 flex flex-col gap-2.5">
+              <a href="#photos-videos" title="Photos & Videos" class="w-10 h-10 rounded-full bg-white/35 hover:bg-white/75 backdrop-blur-md border border-white/40 text-slate-800 flex items-center justify-center transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              </a>
+              <a href="#social-media" title="Social Media Page" class="w-10 h-10 rounded-full bg-white/35 hover:bg-white/75 backdrop-blur-md border border-white/40 text-slate-800 flex items-center justify-center transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Official @yatch.tz Logo Pod -->
+          <div class="relative bg-white pr-2.5 pl-1.5 py-3 rounded-r-[28px] shadow-md flex flex-col items-center gap-3 pointer-events-auto">
+            <a href="#social-media" class="w-10 h-10 rounded-full overflow-hidden border-2 border-slate-200 bg-white p-0.5 shadow-sm">
+              <img src="./yatch_tz_profile.jpg" alt="@yatch.tz" class="w-full h-full object-contain rounded-full" />
+            </a>
+            <a href="#reviews" title="Reviews" class="w-8 h-8 rounded-full text-amber-500 flex items-center justify-center relative font-bold text-sm">
+              â˜…
+            </a>
+          </div>
+
+          <!-- Day / Night Frame Toggle -->
+          <div class="relative bg-white/90 backdrop-blur-md pr-2.5 pl-1.5 py-2.5 rounded-r-[28px] shadow-md flex flex-col items-center gap-2 pointer-events-auto">
+            <button onclick="setFrameMode('dark')" class="w-9 h-9 rounded-full hover:bg-slate-200/60 text-slate-600 flex items-center justify-center transition cursor-pointer">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            </button>
+            <button onclick="setFrameMode('light')" class="w-9 h-9 rounded-full bg-white text-slate-900 shadow flex items-center justify-center transition cursor-pointer">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- =====================================================
+             WELL-ARRANGED SKY TYPOGRAPHY + BALANCED SUBTITLE
+        ====================================================== -->
+        <div class="relative z-10 pt-10 sm:pt-12 px-8 sm:px-24 flex flex-col items-center">
+          <h1
+            id="skyTitle"
+            class="sky-title-fade text-5xl sm:text-7xl lg:text-[82px] font-semibold text-center leading-[1.06] max-w-3xl transition-opacity duration-500"
+          >
+            New Wave Of<br />Nightlife
+          </h1>
+
+          <div class="w-full max-w-[1100px] mt-8 sm:mt-10 flex justify-start">
+            <p id="skySubtitle" class="text-white/95 text-xs sm:text-sm leading-relaxed max-w-[290px] font-normal drop-shadow transition-opacity duration-500">
+              Private luxury yachts, pristine white sandbanks, and helicopter charters across Zanzibar and Dar es Salaam.
+            </p>
+          </div>
+        </div>
+
+        <!-- =====================================================
+             BOTTOM LEFT SCULPTED WHITE CARD
+        ====================================================== -->
+        <div class="relative lg:absolute lg:bottom-0 lg:left-[56px] z-20 mt-10 lg:mt-0 px-4 lg:px-0">
+          <div class="relative bg-white text-slate-900 rounded-t-[40px] lg:rounded-tl-[36px] lg:rounded-tr-[44px] lg:rounded-b-none p-7 sm:p-8 w-full lg:w-[375px] shadow-xl card-alive">
+            <svg class="hidden lg:block absolute bottom-0 -right-10 w-10 h-10 text-white fill-current" viewBox="0 0 40 40">
+              <path d="M0,0 C0,22 18,40 40,40 L0,40 Z" />
+            </svg>
+
+            <h2
+              class="text-lg sm:text-xl font-bold tracking-tight text-slate-900"
+              data-en="Zanzibar &amp; Dar Beaches"
+              data-sw="Fukwe za Zanzibar &amp; Dar"
+            >
+              Zanzibar &amp; Dar Beaches
+            </h2>
+
+            <p
+              class="text-xs text-slate-500 leading-relaxed mt-2.5"
+              data-en="Slipway Masaki, Mbudya &amp; Bongoyo Islands in Dar es Salaam, plus Kendwa Rocks &amp; Hotel Verde in Zanzibar."
+              data-sw="Slipway Masaki, Visiwa vya Mbudya &amp; Bongoyo jijini Dar es Salaam, pamoja na Kendwa Rocks &amp; Hotel Verde visiwani Zanzibar."
+            >
+              Slipway Masaki, Mbudya &amp; Bongoyo Islands in Dar es Salaam, plus Kendwa Rocks &amp; Hotel Verde in Zanzibar.
+            </p>
+
+            <div class="pt-6 flex items-center justify-between">
+              <div>
+                <div class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">252K+</div>
+                <div
+                  class="text-xs text-slate-500 font-medium mt-0.5"
+                  data-en="@yatch.tz Followers"
+                  data-sw="Wafuasi wa @yatch.tz"
+                >
+                  @yatch.tz Followers
+                </div>
+              </div>
+
+              <!-- 4 High-Res No-People Beach & Yacht Scene Switchers -->
+              <div class="flex items-center">
+                <button
+                  type="button"
+                  onclick="switchScene(0)"
+                  title="Twilight Superyacht"
+                  class="w-11 h-11 rounded-full border-2 border-white overflow-hidden shadow-md hover:scale-110 transition cursor-pointer"
+                >
+                  <img src="./futuristic_yacht_twilight_1793189124619.jpg" alt="Twilight Yacht" class="w-full h-full object-cover" />
+                </button>
+                <button
+                  type="button"
+                  onclick="switchScene(1)"
+                  title="Zanzibar Sandbank Yacht"
+                  class="w-11 h-11 -ml-3.5 rounded-full border-2 border-white overflow-hidden shadow-md hover:scale-110 transition cursor-pointer"
+                >
+                  <img src="./zanzibar_sandbank_yacht_empty_1793211653868.jpg" alt="Zanzibar Sandbank" class="w-full h-full object-cover" />
+                </button>
+                <button
+                  type="button"
+                  onclick="switchScene(2)"
+                  title="Dar es Salaam Mbudya Beach Catamaran"
+                  class="w-11 h-11 -ml-3.5 rounded-full border-2 border-white overflow-hidden shadow-md hover:scale-110 transition cursor-pointer"
+                >
+                  <img src="./mbudya_island_beach_catamaran_1793211675719.jpg" alt="Mbudya Beach" class="w-full h-full object-cover" />
+                </button>
+                <button
+                  type="button"
+                  onclick="switchScene(3)"
+                  title="Zanzibar Lagoon Helicopter & Yacht"
+                  class="w-11 h-11 -ml-3.5 rounded-full border-2 border-white overflow-hidden shadow-md hover:scale-110 transition cursor-pointer"
+                >
+                  <img src="./zanzibar_heli_lagoon_empty_1793211704119.jpg" alt="Lagoon Helicopter" class="w-full h-full object-cover" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====================================================
+             BOTTOM RIGHT FROSTED GLASS CARD + @YATCH.TZ LOGO
+        ====================================================== -->
+        <div class="relative lg:absolute lg:bottom-5 lg:right-5 z-20 mt-6 lg:mt-0 px-4 pb-6 lg:p-0">
+          <div class="relative w-full lg:w-[430px] card-alive">
+
+            <div class="lunar-glass rounded-[38px] p-7 text-slate-900 border border-white/55">
+              <div>
+                <h3 id="cardTitle" class="text-lg sm:text-xl font-bold tracking-tight text-slate-900">
+                  Yatch.tz Flagship Fleet
+                </h3>
+                <p id="cardLoc" class="text-xs text-slate-700 font-medium mt-1 flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-slate-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Slipway Masaki (Dar) â€¢<br />Hotel Verde &amp; Kendwa (Zanzibar)</span>
+                </p>
+              </div>
+
+              <p id="cardDesc" class="text-xs text-slate-800/90 leading-relaxed mt-4">
+                Yacht Dar es Salaam and Zanzibar ðŸ‡¹ðŸ‡¿ | Helicopter ðŸš. Private sandbank anchors, sunset cruises, island hopping, and VIP helicopter transfers.
+              </p>
+
+              <div class="mt-4 pl-24 space-y-1.5 text-xs font-semibold text-slate-800">
+                <div class="flex items-center gap-2">
+                  <span data-en="ðŸ›¥ï¸ Luxury Yachts" data-sw="ðŸ›¥ï¸ Yati za Kifahari">ðŸ›¥ï¸ Luxury Yachts</span>
+                  <span>â€¢</span>
+                  <span data-en="ðŸš Helicopter" data-sw="ðŸš Helikopta">ðŸš Helicopter</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span data-en="ðŸï¸ White Sandbanks" data-sw="ðŸï¸ Fukwe za Mchanga">ðŸï¸ White Sandbanks</span>
+                  <span>â€¢</span>
+                  <span data-en="ðŸŒ… Sunset Decks" data-sw="ðŸŒ… Safari za Machweo">ðŸŒ… Sunset Decks</span>
+                </div>
+              </div>
+
+              <div class="mt-5 pl-24 flex items-center justify-end gap-3">
+                <div class="flex flex-col items-center">
+                  <span class="w-10 h-10 rounded-full bg-white/45 border border-white/55 flex items-center justify-center text-slate-900 text-xs">
+                    â™¡
+                  </span>
+                  <span class="text-xs font-medium text-slate-800 mt-1">252K</span>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <span class="w-10 h-10 rounded-full bg-white/45 border border-white/55 flex items-center justify-center text-slate-900 text-xs">
+                    ðŸ”–
+                  </span>
+                  <span class="text-xs font-medium text-slate-800 mt-1">7.5K</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Official @yatch.tz Circular Badge in the Bottom-Left Cutout Pocket -->
+            <div class="shell-float absolute -bottom-2 -left-4 w-24 h-24 rounded-full bg-white p-1.5 flex items-center justify-center shadow-2xl border-4 border-[#1d1754] overflow-hidden">
+              <img src="./yatch_tz_profile.jpg" alt="Yatch.tz Official Logo" class="w-full h-full object-contain rounded-full" />
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =======================================================
+         2. BIO DESTINATIONS PAGE (WITH REAL SHELL & CRAB PHOTO BACKGROUND)
+    ======================================================== -->
+    <section id="destinations" class="relative rounded-[44px] p-8 sm:p-12 shadow-xl overflow-hidden reveal-section border-4 border-white">
+
+      <!-- REAL TOP-DOWN SAND CRABS, STARFISH & SEASHELLS PHOTO BACKGROUND -->
+      <img
+        src="./real_sand_crab_shells_bg_1793212415927.jpg"
+        alt="Real Sand Crabs and Seashells on Zanzibar Beach"
+        class="pointer-events-none absolute inset-0 w-full h-full object-cover bg-drift"
+      />
+      <div class="pointer-events-none absolute inset-0 bg-[#faf4e8]/65 backdrop-blur-[1px]"></div>
+
+      <!-- Floating Real Crab & Shell Macro Photo Badge in Top-Right -->
+      <div
+        onclick="openPhotoModal('./real_crab_shell_closeup_1793212428112.jpg', 'Zanzibar Shoreline â€” Real Ghost Crab, Iridescent Shell & White Coral')"
+        class="hidden lg:flex items-center gap-3 absolute top-8 right-10 z-20 bg-white/90 backdrop-blur-md p-2 pr-4 rounded-full shadow-lg border-2 border-white shell-float cursor-pointer"
+      >
+        <img src="./real_crab_shell_closeup_1793212428112.jpg" alt="Real Sand Crab and Seashell" class="w-12 h-12 rounded-full object-cover" />
+        <div class="text-xs">
+          <div class="font-bold text-slate-900" data-en="ðŸš Untouched Coral Shores" data-sw="ðŸš Fukwe Asili za Matumbawe">ðŸš Untouched Coral Shores</div>
+          <div class="text-slate-500" data-en="Zanzibar &amp; Mbudya Sandbanks" data-sw="Fukwe za Mchanga Zanzibar &amp; Mbudya">Zanzibar &amp; Mbudya Sandbanks</div>
+        </div>
+      </div>
+
+      <div class="relative z-10 max-w-2xl space-y-2">
+        <p
+          class="text-xs font-bold uppercase tracking-widest text-cyan-900"
+          data-en="@YATCH.TZ BIO DESTINATIONS"
+          data-sw="MAENEO YA SAFARI YA @YATCH.TZ"
+        >
+          @YATCH.TZ BIO DESTINATIONS
+        </p>
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
+          <span data-en="Yacht Dar es Salaam &amp; Zanzibar " data-sw="Yati Dar es Salaam &amp; Zanzibar ">Yacht Dar es Salaam &amp; Zanzibar </span>
+          <span class="font-serif-italic font-normal text-4xl sm:text-6xl text-[#0e7490]" data-en="| Helicopter" data-sw="| Helikopta">| Helicopter</span>
+        </h2>
+        <p
+          class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium"
+          data-en="Untouched white sandy beaches, natural seashell coves, luxury catamarans, and private helicopter charters."
+          data-sw="Fukwe nyeupe za mchanga, ghuba za konokono wa baharini, yati za kisasa na ukodishaji binafsi wa helikopta."
+        >
+          Untouched white sandy beaches, natural seashell coves, luxury catamarans, and private helicopter charters.
+        </p>
+      </div>
+
+      <!-- 3 Clean Bio Destination Cards -->
+      <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+
+        <div
+          onclick="openPhotoModal('./mbudya_island_beach_catamaran_1793211675719.jpg', 'Dar es Salaam â€” Mbudya & Bongoyo Island Beach Catamaran')"
+          class="rounded-[34px] bg-white/95 p-3.5 shadow-lg card-alive border border-white cursor-pointer"
+        >
+          <div class="h-60 rounded-[26px] overflow-hidden relative">
+            <img src="./mbudya_island_beach_catamaran_1793211675719.jpg" alt="Mbudya Island Sandy Beach & Catamaran" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 text-slate-900 text-xs font-bold shadow-sm">
+              ðŸ‡¹ðŸ‡¿ Dar es Salaam
+            </span>
+          </div>
+          <div class="p-4 space-y-1.5">
+            <h3
+              class="text-lg font-bold text-slate-900"
+              data-en="Slipway Masaki â€¢ Mbudya &amp; Bongoyo"
+              data-sw="Slipway Masaki â€¢ Mbudya na Bongoyo"
+            >
+              Slipway Masaki â€¢ Mbudya &amp; Bongoyo
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 leading-relaxed"
+              data-en="Sail from Slipway Hotel Masaki to the palm-lined seashell beaches and turquoise lagoons of Mbudya Island and Bongoyo Island."
+              data-sw="Safiri kutoka Slipway Hotel Masaki hadi kwenye fukwe za mchanga mweupe na maji ya feruzi katika Kisiwa cha Mbudya na Kisiwa cha Bongoyo."
+            >
+              Sail from Slipway Hotel Masaki to the palm-lined seashell beaches and turquoise lagoons of Mbudya Island and Bongoyo Island.
+            </p>
+          </div>
+        </div>
+
+        <div
+          onclick="openPhotoModal('./zanzibar_sandbank_yacht_empty_1793211653868.jpg', 'Zanzibar â€” Kendwa Rocks & Nakupenda White Sandbank Yacht')"
+          class="rounded-[34px] bg-white/95 p-3.5 shadow-lg card-alive border border-white cursor-pointer"
+        >
+          <div class="h-60 rounded-[26px] overflow-hidden relative">
+            <img src="./zanzibar_sandbank_yacht_empty_1793211653868.jpg" alt="Zanzibar White Sandbank & Superyacht" class="w-full h-full object-cover" />
+            <span
+              class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 text-slate-900 text-xs font-bold shadow-sm"
+              data-en="ðŸï¸ Zanzibar Beaches"
+              data-sw="ðŸï¸ Fukwe za Zanzibar"
+            >
+              ðŸï¸ Zanzibar Beaches
+            </span>
+          </div>
+          <div class="p-4 space-y-1.5">
+            <h3
+              class="text-lg font-bold text-slate-900"
+              data-en="Hotel Verde &amp; Kendwa Sandbanks"
+              data-sw="Fukwe za Hotel Verde &amp; Kendwa"
+            >
+              Hotel Verde &amp; Kendwa Sandbanks
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 leading-relaxed"
+              data-en="Drop anchor off powder-white Zanzibar sandbanks and crystal-clear turquoise reefs for half-day, full-day, and sunset charters."
+              data-sw="shusha nanga kwenye fukwe nyeupe za mchanga za Zanzibar na miamba ya matumbawe kwa safari za nusu siku, siku nzima na machweo ya jua."
+            >
+              Drop anchor off powder-white Zanzibar sandbanks and crystal-clear turquoise reefs for half-day, full-day, and sunset charters.
+            </p>
+          </div>
+        </div>
+
+        <div
+          onclick="openPhotoModal('./zanzibar_heli_lagoon_empty_1793211704119.jpg', 'Zanzibar & Dar es Salaam â€” VIP Helicopter & Superyacht Lagoon')"
+          class="rounded-[34px] bg-white/95 p-3.5 shadow-lg card-alive border border-white cursor-pointer"
+        >
+          <div class="h-60 rounded-[26px] overflow-hidden relative">
+            <img src="./zanzibar_heli_lagoon_empty_1793211704119.jpg" alt="Helicopter & Superyacht Lagoon" class="w-full h-full object-cover" />
+            <span
+              class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 text-slate-900 text-xs font-bold shadow-sm"
+              data-en="ðŸš Helicopter Charter"
+              data-sw="ðŸš Ukodishaji wa Helikopta"
+            >
+              ðŸš Helicopter Charter
+            </span>
+          </div>
+          <div class="p-4 space-y-1.5">
+            <h3
+              class="text-lg font-bold text-slate-900"
+              data-en="Private Helicopter &amp; Lagoon Fleet"
+              data-sw="Helikopta Binafsi &amp; Yati za Kifahari"
+            >
+              Private Helicopter &amp; Lagoon Fleet
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 leading-relaxed"
+              data-en="Direct VIP helicopter transfers from Dar es Salaam or Zanzibar straight to your waiting yacht anchored in a private sandy cove."
+              data-sw="Usafiri wa moja kwa moja wa helikopta za VIP kutoka Dar es Salaam au Zanzibar hadi kwenye yati yako iliyotia nanga ufukweni."
+            >
+              Direct VIP helicopter transfers from Dar es Salaam or Zanzibar straight to your waiting yacht anchored in a private sandy cove.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         3. PHOTOS & VIDEOS PAGE (#photos-videos)
+         - Set on the Real Sand Crab, Starfish & Seashell Photographic Background
+         - Showcases 8K Beach, Crab, Shell & Yacht Photos + Charter Videos
+    ======================================================== -->
+    <section id="photos-videos" class="relative rounded-[44px] p-8 sm:p-12 shadow-xl space-y-8 overflow-hidden reveal-section border-4 border-white">
+
+      <!-- REAL SHELL & CRAB SANDY BEACH PHOTO BACKGROUND -->
+      <img
+        src="./real_sand_crab_shells_bg_1793212415927.jpg"
+        alt="Real Shells and Crabs Sandy Background"
+        class="pointer-events-none absolute inset-0 w-full h-full object-cover bg-drift"
+      />
+      <div class="pointer-events-none absolute inset-0 bg-[#faf4e8]/62 backdrop-blur-[1px]"></div>
+
+      <!-- Clean Header -->
+      <div class="relative z-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <p
+            class="text-xs font-bold uppercase tracking-widest text-cyan-900"
+            data-en="02 // PHOTOS &amp; VIDEOS PAGE"
+            data-sw="02 // UKURASA WA PICHA NA VIDEO"
+          >
+            02 // PHOTOS &amp; VIDEOS PAGE
+          </p>
+          <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 mt-1">
+            <span data-en="Sandy Beaches, Shells &amp; " data-sw="Fukwe za Mchanga, Konokono &amp; ">Sandy Beaches, Shells &amp; </span>
+            <span class="font-serif-italic font-normal text-4xl sm:text-6xl text-[#0e7490]" data-en="Yacht Gallery" data-sw="Picha za Yati">Yacht Gallery</span>
+          </h2>
+        </div>
+        <p
+          class="text-xs text-slate-700 font-medium"
+          data-en="Click any photo for 8K full-screen view or play our charter videos."
+          data-sw="Bofya picha yoyote kuona kwa ukubwa wa 8K au tazama video zetu za safari."
+        >
+          Click any photo for 8K full-screen view or play our charter videos.
+        </p>
+      </div>
+
+      <!-- Creative Asymmetric Bento + Polaroid Grid -->
+      <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-[295px]">
+
+        <!-- Item 1 (6 cols): Real Crab, Conch Shells & Yacht on Zanzibar Beach -->
+        <div
+          onclick="openPhotoModal('./sandy_beach_shells_yacht_1793211718885.jpg', 'Zanzibar Sandy Shore â€” Real Ghost Crab, Conch Shells & Anchored Superyacht')"
+          class="md:col-span-6 rounded-[34px] bg-white p-3 shadow-lg gallery-tilt-left cursor-pointer group"
+        >
+          <div class="w-full h-full rounded-[26px] overflow-hidden relative">
+            <img src="./sandy_beach_shells_yacht_1793211718885.jpg" alt="Zanzibar Sandy Beach with Shells, Crab and Yacht" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-5 right-5 text-white">
+              <p class="text-xs text-amber-300 font-semibold" data-en="ðŸ¦€ Zanzibar Shoreline" data-sw="ðŸ¦€ Ufukwe wa Zanzibar">ðŸ¦€ Zanzibar Shoreline</p>
+              <h3 class="text-base sm:text-xl font-bold" data-en="Sand Crab, Conch Shells &amp; Anchored Yacht" data-sw="Kaa wa Mchangani, Konokono &amp; Yati ya Kifahari">Sand Crab, Conch Shells &amp; Anchored Yacht</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 (3 cols): Real Macro Sand Crab & Iridescent Seashell -->
+        <div
+          onclick="openPhotoModal('./real_crab_shell_closeup_1793212428112.jpg', 'Untouched Zanzibar Beach â€” Real Ghost Crab & Iridescent Seashells')"
+          class="md:col-span-3 rounded-[34px] bg-white p-3 shadow-lg shell-float cursor-pointer group"
+        >
+          <div class="w-full h-full rounded-[26px] overflow-hidden relative">
+            <img src="./real_crab_shell_closeup_1793212428112.jpg" alt="Real Sand Crab and Seashells" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <p class="text-xs text-cyan-300 font-semibold" data-en="ðŸš Island Nature" data-sw="ðŸš Urembo wa Visiwa">ðŸš Island Nature</p>
+              <h3 class="text-base font-bold" data-en="Ghost Crab &amp; Pearl Shells" data-sw="Kaa wa Ufukweni &amp; Lulu">Ghost Crab &amp; Pearl Shells</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 (3 cols): Top-Down Sand Crabs, Starfish & Seashells -->
+        <div
+          onclick="openPhotoModal('./real_sand_crab_shells_bg_1793212415927.jpg', 'Mbudya & Kendwa Coral Sand â€” Starfish, Sand Crabs & Cowrie Shells')"
+          class="md:col-span-3 rounded-[34px] bg-white p-3 shadow-lg gallery-tilt-right cursor-pointer group"
+        >
+          <div class="w-full h-full rounded-[26px] overflow-hidden relative">
+            <img src="./real_sand_crab_shells_bg_1793212415927.jpg" alt="Starfish Crabs and Shells on Sand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <p class="text-xs text-amber-300 font-semibold" data-en="â­ Coral Sandbank" data-sw="â­ Ufukwe wa Matumbawe">â­ Coral Sandbank</p>
+              <h3 class="text-base font-bold" data-en="Starfish, Crabs &amp; Shells" data-sw="Kiti cha Pweza, Kaa &amp; Konokono">Starfish, Crabs &amp; Shells</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 (4 cols): Dar es Salaam Mbudya Island Beach & Catamaran -->
+        <div
+          onclick="openPhotoModal('./mbudya_island_beach_catamaran_1793211675719.jpg', 'Dar es Salaam â€” Mbudya & Bongoyo Island Beach Catamaran')"
+          class="md:col-span-4 rounded-[34px] bg-white p-3 shadow-lg gallery-tilt-right cursor-pointer group"
+        >
+          <div class="w-full h-full rounded-[26px] overflow-hidden relative">
+            <img src="./mbudya_island_beach_catamaran_1793211675719.jpg" alt="Mbudya Island Beach Catamaran" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <p class="text-xs text-cyan-300 font-semibold">ðŸŒ´ Dar es Salaam</p>
+              <h3 class="text-base font-bold" data-en="Mbudya Seashell Shore &amp; Catamaran" data-sw="Ufukwe wa Mbudya &amp; Katamarani">Mbudya Seashell Shore &amp; Catamaran</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 (4 cols): Sunset Aft Teak Yacht Deck -->
+        <div
+          onclick="openPhotoModal('./zanzibar_sunset_deck_empty_1793211689165.jpg', 'Golden Sunset Teak Deck Overlooking Zanzibar Island')"
+          class="md:col-span-4 rounded-[34px] bg-white p-3 shadow-lg gallery-tilt-left cursor-pointer group"
+        >
+          <div class="w-full h-full rounded-[26px] overflow-hidden relative">
+            <img src="./zanzibar_sunset_deck_empty_1793211689165.jpg" alt="Sunset Yacht Deck" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <p class="text-xs text-amber-300 font-semibold" data-en="ðŸŒ… Golden Sunset Deck" data-sw="ðŸŒ… Machweo ya Dhahabu">ðŸŒ… Golden Sunset Deck</p>
+              <h3 class="text-base font-bold" data-en="Champagne Lounge Overlooking Zanzibar" data-sw="ukumbi wa Shampeni Ukitazama Zanzibar">Champagne Lounge Overlooking Zanzibar</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 (4 cols): Zanzibar White Sandbank & Superyacht -->
+        <div
+          onclick="openPhotoModal('./zanzibar_sandbank_yacht_empty_1793211653868.jpg', 'Zanzibar â€” Kendwa & Nakupenda White Sandbank')"
+          class="md:col-span-4 rounded-[34px] bg-white p-3 shadow-lg gallery-tilt-right cursor-pointer group"
+        >
+          <div class="w-full h-full rounded-[26px] overflow-hidden relative">
+            <img src="./zanzibar_sandbank_yacht_empty_1793211653868.jpg" alt="Zanzibar White Sandbank Yacht" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <p class="text-xs text-cyan-300 font-semibold" data-en="ðŸ–ï¸ Zanzibar Lagoon" data-sw="ðŸ–ï¸ Ghuba ya Zanzibar">ðŸ–ï¸ Zanzibar Lagoon</p>
+              <h3 class="text-base font-bold" data-en="Pure White Sandbank &amp; Superyacht" data-sw="Ufukwe wa Mchanga Mweupe &amp; Supayati">Pure White Sandbank &amp; Superyacht</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         4. OFFICIAL @YATCH.TZ INSTAGRAM PROFILE PAGE (#social-media)
+         - Set on the Real Sand Crab & Seashells Background
+         - Designed as an Actual Interactive Instagram Page for @yatch.tz
+    ======================================================== -->
+    <section id="social-media" class="relative rounded-[44px] p-4 sm:p-10 shadow-xl overflow-hidden reveal-section border-4 border-white">
+
+      <!-- REAL SHELL & CRAB SANDY BEACH PHOTO BACKGROUND -->
+      <img
+        src="./real_sand_crab_shells_bg_1793212415927.jpg"
+        alt="Real Shells and Crabs Sandy Background"
+        class="pointer-events-none absolute inset-0 w-full h-full object-cover bg-drift"
+      />
+      <div class="pointer-events-none absolute inset-0 bg-[#faf4e8]/60 backdrop-blur-[1px]"></div>
+
+      <!-- ACTUAL INSTAGRAM WEB / APP WINDOW -->
+      <div class="relative z-10 max-w-5xl mx-auto bg-white rounded-[32px] shadow-2xl border border-slate-200/90 overflow-hidden text-slate-900">
+
+        <!-- 1. Instagram Top App Navigation Bar -->
+        <div class="px-5 sm:px-8 py-3.5 border-b border-slate-200 flex items-center justify-between bg-white sticky top-0 z-20">
+          <!-- Instagram Camera Icon + Wordmark -->
+          <a href="https://www.instagram.com/yatch.tz/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 group">
+            <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] flex items-center justify-center text-white shadow-sm">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </div>
+            <span class="text-lg font-bold tracking-tight text-slate-900">Instagram</span>
+          </a>
+
+          <!-- Search Input Pill -->
+          <div class="hidden sm:flex items-center gap-2 bg-[#efefef] px-4 py-1.5 rounded-lg w-64 text-xs text-slate-500">
+            <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <span>yatch.tz</span>
+          </div>
+
+          <!-- Right App Actions -->
+          <div class="flex items-center gap-3">
+            <a
+              href="https://www.instagram.com/yatch.tz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-4 py-1.5 rounded-lg bg-[#0095F6] hover:bg-[#1877F2] text-white font-semibold text-xs transition"
+              data-en="Open Instagram â†—"
+              data-sw="Fungua Instagram â†—"
+            >
+              Open Instagram â†—
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Instagram Profile Info Header -->
+        <div class="px-5 sm:px-12 pt-7 pb-6">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12">
+
+            <!-- Profile Picture with Iconic Instagram Story Ring (Uncropped Official Logo) -->
+            <div class="shrink-0 mx-auto sm:mx-0">
+              <button
+                type="button"
+                onclick="openReelModal('De634vXtuYX')"
+                title="Watch @yatch.tz Story Reel"
+                class="relative p-[3.5px] rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:scale-105 transition cursor-pointer shadow-md"
+              >
+                <div class="w-24 h-24 sm:w-36 sm:h-36 rounded-full bg-white p-1.5 overflow-hidden flex items-center justify-center">
+                  <img src="./yatch_tz_profile.jpg" alt="@yatch.tz Official Logo" class="w-full h-full rounded-full object-contain" />
+                </div>
+                <span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-rose-600 text-white text-xs font-bold uppercase tracking-wider shadow">
+                  Reel
+                </span>
+              </button>
+            </div>
+
+            <!-- Username, Buttons, Stats & Bio -->
+            <div class="flex-1 space-y-4 w-full">
+
+              <!-- Row 1: Handle + Verified Badge + Follow / Message Buttons -->
+              <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3">
+                <div class="flex items-center gap-1.5 mr-2">
+                  <h2 class="text-xl sm:text-2xl font-normal text-slate-900">yatch.tz</h2>
+                  <!-- Official Instagram Verified Checkmark SVG -->
+                  <svg class="w-5 h-5 text-[#0095F6] fill-current" viewBox="0 0 40 40" title="Verified">
+                    <path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" />
+                  </svg>
+                </div>
+
+                <a
+                  href="https://www.instagram.com/yatch.tz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="px-5 py-1.5 rounded-lg bg-[#0095F6] hover:bg-[#1877F2] text-white font-semibold text-xs sm:text-sm transition"
+                  data-en="Follow"
+                  data-sw="Fuata"
+                >
+                  Follow
+                </a>
+                <a
+                  href="https://wa.me/255693228345?text=Hi%20@yatch.tz!%20I%20saw%20your%20Instagram%20page%20and%20want%20to%20book%20a%20charter."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="px-4 py-1.5 rounded-lg bg-[#efefef] hover:bg-[#dbdbdb] text-slate-900 font-semibold text-xs sm:text-sm transition"
+                  data-en="Message"
+                  data-sw="Ujumbe"
+                >
+                  Message
+                </a>
+              </div>
+
+              <!-- Row 2: Post / Follower / Following Counts -->
+              <div class="flex items-center justify-center sm:justify-start gap-6 sm:gap-9 text-xs sm:text-sm border-y sm:border-y-0 py-3 sm:py-0 border-slate-100">
+                <div><span class="font-bold text-slate-900">7,516</span> <span class="text-slate-600" data-en="posts" data-sw="machapisho">posts</span></div>
+                <div><span class="font-bold text-slate-900">252K</span> <span class="text-slate-600" data-en="followers" data-sw="wafuasi">followers</span></div>
+                <div><span class="font-bold text-slate-900">6,988</span> <span class="text-slate-600" data-en="following" data-sw="wanaofuatwa">following</span></div>
+              </div>
+
+              <!-- Row 3: Authentic @yatch.tz Bio Lines -->
+              <div class="text-xs sm:text-sm space-y-1 text-center sm:text-left leading-relaxed">
+                <div class="font-bold text-slate-900">Yacht Dar es salam and Zanzibar ðŸ‡¹ðŸ‡¿| Helicopter ðŸš</div>
+                <div class="text-xs text-slate-500 font-medium" data-en="Boat / Ferry &amp; Private Charter Service" data-sw="Huduma ya Boti / Yati &amp; Ukodishaji Binafsi">Boat / Ferry &amp; Private Charter Service</div>
+                <p class="text-slate-800" data-en="ðŸŒŠ Mentally at the beach. The boat life is the good life! ðŸ›¥ï¸ðŸ’™" data-sw="ðŸŒŠ Mawazo yapo ufukweni. Maisha ya yati ni maisha mazuri! ðŸ›¥ï¸ðŸ’™">ðŸŒŠ Mentally at the beach. The boat life is the good life! ðŸ›¥ï¸ðŸ’™</p>
+                <p class="text-slate-800">ðŸ“ Dar es salaam - Slipway Hotel - Masaki</p>
+                <p class="text-slate-800">ðŸ“ Zanzibar - Hotel verde / Kendwa rock</p>
+                <p class="text-slate-700 text-xs" data-en="..| Birthday parties â€¢ Island visitations (Bongoyo, Mbudya, Sandbank) â€¢ Sunset cruising â€¢ Live DJ" data-sw="..| Sherehe za kuzaliwa â€¢ Kutembelea visiwa (Bongoyo, Mbudya, Sandbank) â€¢ Safari za machweo â€¢ DJ Mbashara">..| Birthday parties â€¢ Island visitations (Bongoyo, Mbudya, Sandbank) â€¢ Sunset cruising â€¢ Live DJ</p>
+                <p class="text-slate-800 font-medium">â˜Žï¸ +255 693 228 345 &nbsp;|&nbsp; ðŸ“© davidnindi97@gmail.com</p>
+                <div class="pt-0.5">
+                  <a
+                    href="https://wa.me/255693228345"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 text-[#00376b] font-semibold hover:underline text-xs"
+                  >
+                    <span>ðŸ”— wa.me/message/IVOWCZBCH57NK1</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3. Instagram Story Highlights Row -->
+          <div class="mt-7 pt-2 flex items-center gap-5 sm:gap-8 overflow-x-auto pb-2">
+            <!-- Highlight 1 -->
+            <button type="button" onclick="openReelModal('De634vXtuYX')" class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full p-[2px] border border-slate-300 group-hover:border-slate-500 transition">
+                <img src="./reel_cover_De634vXtuYX.jpg" alt="Slipway Dar" class="w-full h-full rounded-full object-cover" />
+              </div>
+              <span class="text-xs font-medium text-slate-800">Slipway Dar</span>
+            </button>
+
+            <!-- Highlight 2 -->
+            <button type="button" onclick="openReelModal('DaKMG4VNfSB')" class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full p-[2px] border border-slate-300 group-hover:border-slate-500 transition">
+                <img src="./reel_cover_DaKMG4VNfSB.jpg" alt="Live DJ" class="w-full h-full rounded-full object-cover" />
+              </div>
+              <span class="text-xs font-medium text-slate-800">Live DJ ðŸŽ§</span>
+            </button>
+
+            <!-- Highlight 3 -->
+            <button type="button" onclick="openReelModal('DOIQzaPDNC-')" class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full p-[2px] border border-slate-300 group-hover:border-slate-500 transition">
+                <img src="./reel_cover_DOIQzaPDNC-.jpg" alt="Zanzibar" class="w-full h-full rounded-full object-cover" />
+              </div>
+              <span class="text-xs font-medium text-slate-800">Zanzibar ðŸï¸</span>
+            </button>
+
+            <!-- Highlight 4 -->
+            <button type="button" onclick="openReelModal('DZ7CTVpNu6S')" class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full p-[2px] border border-slate-300 group-hover:border-slate-500 transition">
+                <img src="./reel_cover_DZ7CTVpNu6S.jpg" alt="VIP Lounge" class="w-full h-full rounded-full object-cover" />
+              </div>
+              <span class="text-xs font-medium text-slate-800">VIP Lounge</span>
+            </button>
+
+            <!-- Highlight 5 -->
+            <button type="button" onclick="openReelModal('DQ_jcS_DAGe')" class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full p-[2px] border border-slate-300 group-hover:border-slate-500 transition">
+                <img src="./reel_cover_DQ_jcS_DAGe.jpg" alt="Beach Party" class="w-full h-full rounded-full object-cover" />
+              </div>
+              <span class="text-xs font-medium text-slate-800">Mbudya ðŸ–ï¸</span>
+            </button>
+
+            <!-- Highlight 6 -->
+            <button type="button" onclick="openReelModal('DSJ-U2OjcXj')" class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full p-[2px] border border-slate-300 group-hover:border-slate-500 transition">
+                <img src="./reel_cover_DSJ-U2OjcXj.jpg" alt="Live Kitchen" class="w-full h-full rounded-full object-cover" />
+              </div>
+              <span class="text-xs font-medium text-slate-800" data-en="Live Chef ðŸ±" data-sw="Mpishi ðŸ±">Live Chef ðŸ±</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Instagram Profile Navigation Tabs (POSTS | REELS | TAGGED) -->
+        <div class="border-t border-slate-200 flex items-center justify-center gap-10 sm:gap-16 text-xs font-semibold tracking-widest uppercase">
+          <button
+            type="button"
+            id="igTabPosts"
+            onclick="switchIgTab('posts')"
+            class="flex items-center gap-2 py-3.5 border-t-2 border-slate-900 -mt-[1px] text-slate-900 cursor-pointer transition"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+            <span data-en="Posts" data-sw="Machapisho">Posts</span>
+          </button>
+
+          <button
+            type="button"
+            id="igTabReels"
+            onclick="switchIgTab('reels')"
+            class="flex items-center gap-2 py-3.5 border-t-2 border-transparent -mt-[1px] text-slate-400 hover:text-slate-700 cursor-pointer transition"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m10 8 6 4-6 4V8Z"/></svg>
+            <span data-en="Reels" data-sw="Video (Reels)">Reels</span>
+          </button>
+
+          <button
+            type="button"
+            id="igTabTagged"
+            onclick="switchIgTab('tagged')"
+            class="flex items-center gap-2 py-3.5 border-t-2 border-transparent -mt-[1px] text-slate-400 hover:text-slate-700 cursor-pointer transition"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span data-en="Tagged" data-sw="Waliohusishwa">Tagged</span>
+          </button>
+        </div>
+
+        <!-- 5A. INSTAGRAM 3-COLUMN "POSTS" GRID (All 7 Real @yatch.tz Cover Photos + 2 Charter Posts = 3x3 Grid) -->
+        <div id="igGridPosts" class="grid grid-cols-3 gap-0.5 sm:gap-1 bg-white p-0.5 sm:p-1">
+
+          <!-- Tile 1: Reel De634vXtuYX -->
+          <div onclick="openReelModal('De634vXtuYX')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_De634vXtuYX.jpg" alt="@yatch.tz Reel De634vXtuYX" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <!-- Top-right Reel Icon -->
+            <div class="absolute top-2.5 right-2.5 text-white drop-shadow">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="m12.82 5.58-.66-1.32A1.99 1.99 0 0 0 10.38 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-6.38a1 1 0 0 1-.8-.42ZM10 16.5v-6l5 3-5 3Z"/></svg>
+            </div>
+            <!-- Hover Overlay -->
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 3.4K</span>
+              <span>ðŸ’¬ 142</span>
+            </div>
+          </div>
+
+          <!-- Tile 2: Reel DaKMG4VNfSB -->
+          <div onclick="openReelModal('DaKMG4VNfSB')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DaKMG4VNfSB.jpg" alt="@yatch.tz Reel DaKMG4VNfSB" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute top-2.5 right-2.5 text-white drop-shadow">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="m12.82 5.58-.66-1.32A1.99 1.99 0 0 0 10.38 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-6.38a1 1 0 0 1-.8-.42ZM10 16.5v-6l5 3-5 3Z"/></svg>
+            </div>
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 5.1K</span>
+              <span>ðŸ’¬ 238</span>
+            </div>
+          </div>
+
+          <!-- Tile 3: Post DP0aICqjMq4 -->
+          <div onclick="openReelModal('DP0aICqjMq4')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DP0aICqjMq4.jpg" alt="@yatch.tz Post DP0aICqjMq4" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <!-- Top-right Carousel Icon -->
+            <div class="absolute top-2.5 right-2.5 text-white drop-shadow">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 3H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-2 16H5a2 2 0 0 1-2-2V7H1v10a4 4 0 0 0 4 4h12v-2Z"/></svg>
+            </div>
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 4.7K</span>
+              <span>ðŸ’¬ 189</span>
+            </div>
+          </div>
+
+          <!-- Tile 4: Reel DOIQzaPDNC- -->
+          <div onclick="openReelModal('DOIQzaPDNC-')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DOIQzaPDNC-.jpg" alt="@yatch.tz Reel DOIQzaPDNC-" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute top-2.5 right-2.5 text-white drop-shadow">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="m12.82 5.58-.66-1.32A1.99 1.99 0 0 0 10.38 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-6.38a1 1 0 0 1-.8-.42ZM10 16.5v-6l5 3-5 3Z"/></svg>
+            </div>
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 2.9K</span>
+              <span>ðŸ’¬ 116</span>
+            </div>
+          </div>
+
+          <!-- Tile 5: Reel DZ7CTVpNu6S -->
+          <div onclick="openReelModal('DZ7CTVpNu6S')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DZ7CTVpNu6S.jpg" alt="@yatch.tz Reel DZ7CTVpNu6S" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute top-2.5 right-2.5 text-white drop-shadow">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="m12.82 5.58-.66-1.32A1.99 1.99 0 0 0 10.38 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-6.38a1 1 0 0 1-.8-.42ZM10 16.5v-6l5 3-5 3Z"/></svg>
+            </div>
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 3.8K</span>
+              <span>ðŸ’¬ 164</span>
+            </div>
+          </div>
+
+          <!-- Tile 6: Reel DQ_jcS_DAGe -->
+          <div onclick="openReelModal('DQ_jcS_DAGe')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DQ_jcS_DAGe.jpg" alt="@yatch.tz Reel DQ_jcS_DAGe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute top-2.5 right-2.5 text-white drop-shadow">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="m12.82 5.58-.66-1.32A1.99 1.99 0 0 0 10.38 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-6.38a1 1 0 0 1-.8-.42ZM10 16.5v-6l5 3-5 3Z"/></svg>
+            </div>
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 4.2K</span>
+              <span>ðŸ’¬ 195</span>
+            </div>
+          </div>
+
+          <!-- Tile 7: Reel DSJ-U2OjcXj -->
+          <div onclick="openReelModal('DSJ-U2OjcXj')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DSJ-U2OjcXj.jpg" alt="@yatch.tz Reel DSJ-U2OjcXj" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute top-2.5 right-2.5 text-white drop-shadow">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="m12.82 5.58-.66-1.32A1.99 1.99 0 0 0 10.38 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-6.38a1 1 0 0 1-.8-.42ZM10 16.5v-6l5 3-5 3Z"/></svg>
+            </div>
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 3.1K</span>
+              <span>ðŸ’¬ 128</span>
+            </div>
+          </div>
+
+          <!-- Tile 8: Zanzibar White Sandbank Charter -->
+          <div onclick="openPhotoModal('./zanzibar_sandbank_yacht_empty_1793211653868.jpg', '@yatch.tz â€” Zanzibar White Sandbank & Superyacht Charter')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./zanzibar_sandbank_yacht_empty_1793211653868.jpg" alt="Zanzibar White Sandbank" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 2.6K</span>
+              <span>ðŸ’¬ 94</span>
+            </div>
+          </div>
+
+          <!-- Tile 9: Helicopter & Lagoon Superyacht -->
+          <div onclick="openPhotoModal('./zanzibar_heli_lagoon_empty_1793211704119.jpg', '@yatch.tz â€” VIP Helicopter & Superyacht Lagoon Charter')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./zanzibar_heli_lagoon_empty_1793211704119.jpg" alt="Helicopter & Superyacht" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 3.9K</span>
+              <span>ðŸ’¬ 151</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 5B. INSTAGRAM 3-COLUMN "REELS" GRID (All 6 Actual @yatch.tz Reels in 9:16 Vertical Format) -->
+        <div id="igGridReels" class="hidden grid-cols-3 gap-0.5 sm:gap-1 bg-white p-0.5 sm:p-1">
+
+          <!-- Reel 1: De634vXtuYX -->
+          <div onclick="openReelModal('De634vXtuYX')" class="group relative aspect-[9/16] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_De634vXtuYX.jpg" alt="Reel De634vXtuYX" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+              <span>â–¶</span><span>68.4K</span>
+            </div>
+          </div>
+
+          <!-- Reel 2: DaKMG4VNfSB -->
+          <div onclick="openReelModal('DaKMG4VNfSB')" class="group relative aspect-[9/16] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DaKMG4VNfSB.jpg" alt="Reel DaKMG4VNfSB" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+              <span>â–¶</span><span>112K</span>
+            </div>
+          </div>
+
+          <!-- Reel 3: DOIQzaPDNC- -->
+          <div onclick="openReelModal('DOIQzaPDNC-')" class="group relative aspect-[9/16] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DOIQzaPDNC-.jpg" alt="Reel DOIQzaPDNC-" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+              <span>â–¶</span><span>54.2K</span>
+            </div>
+          </div>
+
+          <!-- Reel 4: DZ7CTVpNu6S -->
+          <div onclick="openReelModal('DZ7CTVpNu6S')" class="group relative aspect-[9/16] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DZ7CTVpNu6S.jpg" alt="Reel DZ7CTVpNu6S" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+              <span>â–¶</span><span>79.1K</span>
+            </div>
+          </div>
+
+          <!-- Reel 5: DQ_jcS_DAGe -->
+          <div onclick="openReelModal('DQ_jcS_DAGe')" class="group relative aspect-[9/16] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DQ_jcS_DAGe.jpg" alt="Reel DQ_jcS_DAGe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+              <span>â–¶</span><span>88.5K</span>
+            </div>
+          </div>
+
+          <!-- Reel 6: DSJ-U2OjcXj -->
+          <div onclick="openReelModal('DSJ-U2OjcXj')" class="group relative aspect-[9/16] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DSJ-U2OjcXj.jpg" alt="Reel DSJ-U2OjcXj" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+              <span>â–¶</span><span>46.9K</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 5C. INSTAGRAM 3-COLUMN "TAGGED" GRID -->
+        <div id="igGridTagged" class="hidden grid-cols-3 gap-0.5 sm:gap-1 bg-white p-0.5 sm:p-1">
+          <div onclick="openReelModal('DP0aICqjMq4')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DP0aICqjMq4.jpg" alt="Tagged Post 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 4.7K</span>
+              <span>ðŸ’¬ 189</span>
+            </div>
+          </div>
+          <div onclick="openReelModal('DaKMG4VNfSB')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DaKMG4VNfSB.jpg" alt="Tagged Post 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 5.1K</span>
+              <span>ðŸ’¬ 238</span>
+            </div>
+          </div>
+          <div onclick="openReelModal('DSJ-U2OjcXj')" class="group relative aspect-[4/5] bg-slate-900 overflow-hidden cursor-pointer">
+            <img src="./reel_cover_DSJ-U2OjcXj.jpg" alt="Tagged Post 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-5 text-white font-bold text-xs sm:text-sm">
+              <span>â¤ï¸ 3.1K</span>
+              <span>ðŸ’¬ 128</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         5. GUEST REVIEWS & CHARTER TESTIMONIALS (#reviews)
+         - Set on the Real Sand Crab & Seashells Background
+         - Features Verified Charter Reviews + Interactive "Leave a Review" Form
+    ======================================================== -->
+    <section id="reviews" class="relative rounded-[44px] p-8 sm:p-12 shadow-xl space-y-8 overflow-hidden reveal-section border-4 border-white">
+
+      <!-- REAL SHELL & CRAB SANDY BEACH PHOTO BACKGROUND -->
+      <img
+        src="./real_sand_crab_shells_bg_1793212415927.jpg"
+        alt="Real Shells and Crabs Sandy Background"
+        class="pointer-events-none absolute inset-0 w-full h-full object-cover bg-drift"
+      />
+      <div class="pointer-events-none absolute inset-0 bg-[#faf4e8]/75 backdrop-blur-[2px]"></div>
+
+      <!-- Header + Rating Summary Bar -->
+      <div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <span
+            class="px-3.5 py-1.5 rounded-full bg-[#1d1754] text-amber-300 font-bold text-xs uppercase tracking-widest"
+            data-en="â˜… Verified Guest Reviews"
+            data-sw="â˜… Maoni Halisi ya Wateja"
+          >
+            â˜… Verified Guest Reviews
+          </span>
+          <h2
+            class="text-2xl sm:text-4xl font-bold tracking-tight text-slate-900 mt-3"
+            data-en="What Guests Say About @yatch.tz"
+            data-sw="Wateja Wanasemaje Kuhusu @yatch.tz"
+          >
+            What Guests Say About @yatch.tz
+          </h2>
+          <p
+            class="text-xs sm:text-sm text-slate-600 mt-1"
+            data-en="Real experiences from private charters in Dar es Salaam (Slipway, Mbudya, Bongoyo) &amp; Zanzibar (Hotel Verde, Kendwa)."
+            data-sw="Uzoefu halisi wa wateja wetu kwenye safari za yati Dar es Salaam (Slipway, Mbudya, Bongoyo) &amp; Zanzibar (Hotel Verde, Kendwa)."
+          >
+            Real experiences from private charters in Dar es Salaam (Slipway, Mbudya, Bongoyo) &amp; Zanzibar (Hotel Verde, Kendwa).
+          </p>
+        </div>
+
+        <!-- Overall Score Pill + Write Review Trigger -->
+        <div class="flex flex-wrap items-center gap-4 bg-white/95 px-5 py-3.5 rounded-3xl shadow-md border border-white shrink-0">
+          <div class="flex items-center gap-2.5">
+            <span class="text-2xl sm:text-3xl font-extrabold text-slate-900">4.9</span>
+            <div>
+              <div class="text-amber-400 text-sm tracking-widest leading-none">â˜…â˜…â˜…â˜…â˜…</div>
+              <div class="text-xs text-slate-500 font-medium mt-1" data-en="420+ Charter Reviews" data-sw="Maoni 420+ ya Safari">420+ Charter Reviews</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            onclick="toggleReviewForm()"
+            class="px-4 py-2 rounded-full bg-[#1d1754] hover:bg-slate-800 text-white font-semibold text-xs transition cursor-pointer"
+            data-en="+ Leave a Review"
+            data-sw="+ Andika Maoni"
+          >
+            + Leave a Review
+          </button>
+        </div>
+      </div>
+
+      <!-- Collapsible Interactive "Leave a Review" Form -->
+      <form
+        id="reviewFormBox"
+        onsubmit="submitReview(event)"
+        class="hidden relative z-10 bg-white/95 rounded-[32px] p-6 sm:p-8 shadow-lg border border-white space-y-4"
+      >
+        <div class="flex items-center justify-between">
+          <h3 class="text-base sm:text-lg font-bold text-slate-900" data-en="Share Your @yatch.tz Charter Experience" data-sw="Shiriki Uzoefu Wako wa Safari na @yatch.tz">Share Your @yatch.tz Charter Experience</h3>
+          <button type="button" onclick="toggleReviewForm()" class="text-xs text-slate-400 hover:text-slate-700 font-bold" data-en="âœ• Close" data-sw="âœ• Funga">âœ• Close</button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Your Name" data-sw="Jina Lako">Your Name</label>
+            <input
+              id="revName"
+              type="text"
+              required
+              placeholder="e.g. Kelvin M."
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-[#1d1754]"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Charter Experience" data-sw="Safari Uliyochagua">Charter Experience</label>
+            <select
+              id="revRoute"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-[#1d1754] bg-white"
+            >
+              <option value="Slipway Masaki â€¢ Mbudya Island">Dar: Slipway Masaki â€¢ Mbudya Island</option>
+              <option value="Zanzibar â€¢ Kendwa &amp; White Sandbank">Zanzibar: Kendwa &amp; White Sandbank</option>
+              <option value="Bongoyo Island â€¢ Sunset DJ Cruise">Dar: Bongoyo Island â€¢ Sunset DJ Cruise</option>
+              <option value="VIP Helicopter &amp; Superyacht Charter">VIP Helicopter &amp; Superyacht Charter</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Rating" data-sw="Alama">Rating</label>
+            <select
+              id="revStars"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-[#1d1754] bg-white text-amber-500 font-bold"
+            >
+              <option value="â˜…â˜…â˜…â˜…â˜…">â˜…â˜…â˜…â˜…â˜… (5/5)</option>
+              <option value="â˜…â˜…â˜…â˜…â˜†">â˜…â˜…â˜…â˜…â˜† (4/5)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Your Review" data-sw="Maoni Yako">Your Review</label>
+          <textarea
+            id="revText"
+            rows="2"
+            required
+            placeholder="Tell us about the yacht, crew, onboard chef, DJ, or sandbank visit..."
+            class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-[#1d1754]"
+          ></textarea>
+        </div>
+
+        <div class="flex justify-end">
+          <button
+            type="submit"
+            class="px-6 py-2.5 rounded-full bg-[#1d1754] hover:bg-amber-400 hover:text-slate-900 text-white font-bold text-xs uppercase tracking-wider transition cursor-pointer"
+            data-en="Post Review"
+            data-sw="Tuma Maoni"
+          >
+            Post Review
+          </button>
+        </div>
+      </form>
+
+      <!-- 4-Card Reviews Grid -->
+      <div id="reviewsGrid" class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Review Card 1 -->
+        <div class="bg-white/95 backdrop-blur-md rounded-[32px] p-6 shadow-lg border border-white flex flex-col justify-between card-alive">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-amber-400 text-sm tracking-widest">â˜…â˜…â˜…â˜…â˜…</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold text-xs" data-en="âœ“ Verified" data-sw="âœ“ Imethibitishwa">âœ“ Verified</span>
+            </div>
+            <p
+              class="text-xs sm:text-sm text-slate-700 leading-relaxed"
+              data-en="â€œBooked a full-day catamaran from Slipway Hotel to Mbudya Island for my birthday. The live kitchen chef cooked fresh grilled seafood on deck and the DJ kept us dancing till sunset!â€"
+              data-sw="â€œTulikodisha katamarani siku nzima kutoka Slipway Hotel kwenda Kisiwa cha Mbudya kwa sherehe yangu ya kuzaliwa. Mpishi alipika chakula kitamu cha baharini na DJ alichangamsha safari hadi machweo!â€"
+            >
+              â€œBooked a full-day catamaran from Slipway Hotel to Mbudya Island for my birthday. The live kitchen chef cooked fresh grilled seafood on deck and the DJ kept us dancing till sunset!â€
+            </p>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100 flex items-center gap-3">
+            <img src="./reel_cover_De634vXtuYX.jpg" alt="Amara N." class="w-10 h-10 rounded-full object-cover border border-slate-200 shrink-0" />
+            <div>
+              <div class="text-xs font-bold text-slate-900">Amara N.</div>
+              <div class="text-xs text-slate-500">Slipway Masaki â€¢ Mbudya Island</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="bg-white/95 backdrop-blur-md rounded-[32px] p-6 shadow-lg border border-white flex flex-col justify-between card-alive">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-amber-400 text-sm tracking-widest">â˜…â˜…â˜…â˜…â˜…</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold text-xs" data-en="âœ“ Verified" data-sw="âœ“ Imethibitishwa">âœ“ Verified</span>
+            </div>
+            <p
+              class="text-xs sm:text-sm text-slate-700 leading-relaxed"
+              data-en="â€œCruising from Hotel Verde out to the Zanzibar white sandbanks with @yatch.tz was pure luxury. Crystal-clear turquoise water, smooth house beats onboard, and 10/10 crew service.â€"
+              data-sw="â€œKusafiri kutoka Hotel Verde kwenda kwenye fukwe nyeupe za mchanga za Zanzibar na @yatch.tz ilikuwa fahari ya kipekee. Maji safi ya feruzi, muziki mzuri na huduma bora kabisa.â€"
+            >
+              â€œCruising from Hotel Verde out to the Zanzibar white sandbanks with @yatch.tz was pure luxury. Crystal-clear turquoise water, smooth house beats onboard, and 10/10 crew service.â€
+            </p>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100 flex items-center gap-3">
+            <img src="./reel_cover_DaKMG4VNfSB.jpg" alt="Tariq K." class="w-10 h-10 rounded-full object-cover border border-slate-200 shrink-0" />
+            <div>
+              <div class="text-xs font-bold text-slate-900">Tariq K.</div>
+              <div class="text-xs text-slate-500">Zanzibar â€¢ Kendwa &amp; Sandbank</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="bg-white/95 backdrop-blur-md rounded-[32px] p-6 shadow-lg border border-white flex flex-col justify-between card-alive">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-amber-400 text-sm tracking-widest">â˜…â˜…â˜…â˜…â˜…</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold text-xs" data-en="âœ“ Verified" data-sw="âœ“ Imethibitishwa">âœ“ Verified</span>
+            </div>
+            <p
+              class="text-xs sm:text-sm text-slate-700 leading-relaxed"
+              data-en="â€œDavid and the @yatch.tz team arranged our private helicopter transfer straight to the yacht cove. Seamless coordination, chilled champagne waiting on deck, and total privacy.â€"
+              data-sw="â€œDavid na timu ya @yatch.tz waliandaa usafiri wetu binafsi wa helikopta moja kwa moja hadi kwenye yati. Mpangilio mzuri, shampeni baridi na faragha ya hali ya juu.â€"
+            >
+              â€œDavid and the @yatch.tz team arranged our private helicopter transfer straight to the yacht cove. Seamless coordination, chilled champagne waiting on deck, and total privacy.â€
+            </p>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100 flex items-center gap-3">
+            <img src="./reel_cover_DP0aICqjMq4.jpg" alt="Elena & Marcus" class="w-10 h-10 rounded-full object-cover border border-slate-200 shrink-0" />
+            <div>
+              <div class="text-xs font-bold text-slate-900">Elena &amp; Marcus</div>
+              <div class="text-xs text-slate-500">VIP Helicopter &amp; Yacht Charter</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 4 -->
+        <div class="bg-white/95 backdrop-blur-md rounded-[32px] p-6 shadow-lg border border-white flex flex-col justify-between card-alive">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-amber-400 text-sm tracking-widest">â˜…â˜…â˜…â˜…â˜…</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold text-xs" data-en="âœ“ Verified" data-sw="âœ“ Imethibitishwa">âœ“ Verified</span>
+            </div>
+            <p
+              class="text-xs sm:text-sm text-slate-700 leading-relaxed"
+              data-en="â€œHosted our 16-guest bridal shower cruise to Bongoyo Island. Their photographer captured the best memories and the golden hour views sailing back to Masaki were magical!â€"
+              data-sw="â€œTulisherehekea bridal shower ya wageni 16 kwenda Kisiwa cha Bongoyo. Mpiga picha wao alipiga picha nzuri sana na mandhari ya machweo tukirudi Masaki ilikuwa ya kipekee!â€"
+            >
+              â€œHosted our 16-guest bridal shower cruise to Bongoyo Island. Their photographer captured the best memories and the golden hour views sailing back to Masaki were magical!â€
+            </p>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-slate-100 flex items-center gap-3">
+            <img src="./reel_cover_DSJ-U2OjcXj.jpg" alt="Neema S." class="w-10 h-10 rounded-full object-cover border border-slate-200 shrink-0" />
+            <div>
+              <div class="text-xs font-bold text-slate-900">Neema S.</div>
+              <div class="text-xs text-slate-500">Bongoyo Island â€¢ Bridal Shower</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         6. BIO CONTACT & DIRECT WHATSAPP BOOKING (SINGLE PRIMARY CTA)
+    ======================================================== -->
+    <section id="contact" class="relative overflow-hidden bg-[#1d1754] text-white rounded-[44px] p-8 sm:p-12 shadow-2xl reveal-section">
+
+      <div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+
+        <div class="space-y-4 max-w-2xl">
+          <div class="flex items-center gap-3.5">
+            <div class="w-14 h-14 rounded-full bg-white p-1 border-2 border-amber-300 shadow-lg shrink-0 flex items-center justify-center">
+              <img src="./yatch_tz_profile.jpg" alt="@yatch.tz Official Logo" class="w-full h-full rounded-full object-contain" />
+            </div>
+            <div>
+              <h2 class="text-xl sm:text-2xl font-bold">@yatch.tz</h2>
+              <p class="text-xs text-amber-300 font-medium" data-en="Yacht Dar es Salaam and Zanzibar ðŸ‡¹ðŸ‡¿ | Helicopter ðŸš" data-sw="Yati Dar es Salaam na Zanzibar ðŸ‡¹ðŸ‡¿ | Helikopta ðŸš">Yacht Dar es Salaam and Zanzibar ðŸ‡¹ðŸ‡¿ | Helicopter ðŸš</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 text-xs text-slate-200">
+            <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-sm">
+              <div class="text-amber-300 font-bold mb-1" data-en="ðŸ“ Locations" data-sw="ðŸ“ Maeneo Yetu">ðŸ“ Locations</div>
+              <div>Dar: Slipway Hotel, Masaki</div>
+              <div>Zanzibar: Hotel Verde &amp; Kendwa</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-sm">
+              <div class="text-amber-300 font-bold mb-1" data-en="ðŸ“ž Phone &amp; WhatsApp" data-sw="ðŸ“ž Simu &amp; WhatsApp">ðŸ“ž Phone &amp; WhatsApp</div>
+              <div class="font-semibold text-white text-sm">+255 693 228 345</div>
+              <div data-en="Direct Charter Line" data-sw="Mawasiliano ya Moja kwa Moja">Direct Charter Line</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-sm">
+              <div class="text-amber-300 font-bold mb-1" data-en="âœ‰ï¸ Email" data-sw="âœ‰ï¸ Barua Pepe">âœ‰ï¸ Email</div>
+              <div class="font-semibold text-white">davidnindi97@gmail.com</div>
+              <div data-en="Private &amp; Discreet" data-sw="Huduma Binafsi na ya Siri">Private &amp; Discreet</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SINGLE PRIMARY CTA BUTTON -->
+        <div class="w-full lg:w-auto shrink-0">
+          <a
+            href="https://wa.me/255693228345?text=Hi%20@yatch.tz!%20I%20would%20like%20to%20book%20a%20private%20Yacht%20/%20Helicopter%20charter."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full lg:w-auto inline-flex items-center justify-center gap-3 py-5 px-9 rounded-full bg-white hover:bg-amber-300 text-slate-900 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-xl transition cursor-pointer"
+          >
+            <span data-en="Book on WhatsApp" data-sw="Weka Nafasi WhatsApp">Book on WhatsApp</span>
+            <span>â†—</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    let currentLang = 'en';
+
+    function toggleReviewForm() {
+      const box = document.getElementById('reviewFormBox');
+      box.classList.toggle('hidden');
+    }
+
+    function submitReview(e) {
+      e.preventDefault();
+      const name = document.getElementById('revName').value.trim();
+      const route = document.getElementById('revRoute').value;
+      const stars = document.getElementById('revStars').value;
+      const text = document.getElementById('revText').value.trim();
+      if (!name || !text) return;
+
+      const grid = document.getElementById('reviewsGrid');
+      const card = document.createElement('div');
+      card.className = 'bg-white/95 backdrop-blur-md rounded-[32px] p-6 shadow-lg border border-white flex flex-col justify-between card-alive';
+      const badgeLabel = currentLang === 'sw' ? 'âœ“ Sasa Hivi' : 'âœ“ Just Now';
+      card.innerHTML = `
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-amber-400 text-sm tracking-widest">${stars}</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold text-xs">${badgeLabel}</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed"></p>
+        </div>
+        <div class="pt-5 mt-4 border-t border-slate-100 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[#1d1754] text-amber-300 font-bold text-xs flex items-center justify-center shrink-0">â˜…</div>
+          <div>
+            <div class="text-xs font-bold text-slate-900 rev-author"></div>
+            <div class="text-xs text-slate-500 rev-route"></div>
+          </div>
+        </div>
+      `;
+      card.querySelector('p').textContent = `â€œ${text}â€`;
+      card.querySelector('.rev-author').textContent = name;
+      card.querySelector('.rev-route').textContent = route;
+
+      grid.prepend(card);
+      document.getElementById('reviewFormBox').reset();
+      document.getElementById('reviewFormBox').classList.add('hidden');
+    }
+
+    function closeAgeGate() {
+      const modal = document.getElementById('ageGateModal');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      setTimeout(() => modal.classList.add('hidden'), 450);
+    }
+
+    function openPhotoModal(src, caption) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modalCaption').textContent = caption;
+      document.getElementById('photoModal').classList.remove('hidden');
+    }
+
+    function closePhotoModal() {
+      document.getElementById('photoModal').classList.add('hidden');
+    }
+
+    function openReelModal(shortcode) {
+      const frame = document.getElementById('igEmbedFrame');
+      frame.src = `https://www.instagram.com/p/${shortcode}/embed/`;
+      document.getElementById('reelModal').classList.remove('hidden');
+    }
+
+    function closeReelModal() {
+      const frame = document.getElementById('igEmbedFrame');
+      frame.src = '';
+      document.getElementById('reelModal').classList.add('hidden');
+    }
+
+    function switchIgTab(tab) {
+      const tabs = {
+        posts: { btn: 'igTabPosts', grid: 'igGridPosts' },
+        reels: { btn: 'igTabReels', grid: 'igGridReels' },
+        tagged: { btn: 'igTabTagged', grid: 'igGridTagged' }
+      };
+
+      Object.keys(tabs).forEach((key) => {
+        const btnEl = document.getElementById(tabs[key].btn);
+        const gridEl = document.getElementById(tabs[key].grid);
+        if (key === tab) {
+          btnEl.className = 'flex items-center gap-2 py-3.5 border-t-2 border-slate-900 -mt-[1px] text-slate-900 cursor-pointer transition';
+          gridEl.classList.remove('hidden');
+          gridEl.classList.add('grid');
+        } else {
+          btnEl.className = 'flex items-center gap-2 py-3.5 border-t-2 border-transparent -mt-[1px] text-slate-400 hover:text-slate-700 cursor-pointer transition';
+          gridEl.classList.add('hidden');
+          gridEl.classList.remove('grid');
+        }
+      });
+    }
+
+    // 4 High-Res No-People Beach & Yacht Hero Scenes (English + Kiswahili)
+    const scenes = [
+      {
+        img: './futuristic_yacht_twilight_1793189124619.jpg',
+        en: {
+          skyTitle: 'New Wave Of<br />Nightlife',
+          skySub: 'Private luxury yachts, pristine white sandbanks, and helicopter charters across Zanzibar and Dar es Salaam.',
+          cardTitle: 'Yatch.tz Flagship Fleet',
+          cardLoc: 'Slipway Masaki (Dar) â€¢<br />Hotel Verde & Kendwa (Zanzibar)',
+          cardDesc: 'Yacht Dar es Salaam and Zanzibar ðŸ‡¹ðŸ‡¿ | Helicopter ðŸš. Private sandbank anchors, sunset cruises, island hopping, and VIP helicopter transfers.',
+          topLoc: 'Zanzibar & Dar',
+          topVessel: 'Yacht & Heli',
+          topTier: '4.9 â˜… (420+)'
+        },
+        sw: {
+          skyTitle: 'Wimbi Jipya la<br />Burudani Baharini',
+          skySub: 'Yati binafsi za kifahari, fukwe nyeupe za mchanga, na safari za helikopta Zanzibar na Dar es Salaam.',
+          cardTitle: 'Meli za Kifahari za Yatch.tz',
+          cardLoc: 'Slipway Masaki (Dar) â€¢<br />Hotel Verde & Kendwa (Zanzibar)',
+          cardDesc: 'Yati Dar es Salaam na Zanzibar ðŸ‡¹ðŸ‡¿ | Helikopta ðŸš. Safari za fukwe za mchanga, machweo ya jua, kutembelea visiwa na helikopta za VIP.',
+          topLoc: 'Zanzibar & Dar',
+          topVessel: 'Yati & Helikopta',
+          topTier: '4.9 â˜… (420+)'
+        }
+      },
+      {
+        img: './zanzibar_sandbank_yacht_empty_1793211653868.jpg',
+        en: {
+          skyTitle: 'Zanzibar White<br />Sandbanks',
+          skySub: 'Untouched powder-white sandbanks and glowing turquoise coral lagoons off Kendwa Rocks and Hotel Verde.',
+          cardTitle: 'Zanzibar Sandbank Fleet',
+          cardLoc: 'Kendwa Rocks â€¢ Hotel Verde,<br />Zanzibar',
+          cardDesc: 'Drop anchor in crystal-clear turquoise water right off Zanzibarâ€™s private white sandy beaches and coral atolls.',
+          topLoc: 'Zanzibar',
+          topVessel: 'Superyacht',
+          topTier: '4.9 â˜… (420+)'
+        },
+        sw: {
+          skyTitle: 'Fukwe Nyeupe za<br />Mchanga Zanzibar',
+          skySub: 'Fukwe safi za mchanga mweupe na maji ya feruzi yenye matumbawe karibu na Kendwa Rocks na Hotel Verde.',
+          cardTitle: 'Meli za Fukwe za Zanzibar',
+          cardLoc: 'Kendwa Rocks â€¢ Hotel Verde,<br />Zanzibar',
+          cardDesc: 'Tia nanga kwenye maji safi ya feruzi kando ya fukwe binafsi za mchanga mweupe na visiwa vya matumbawe Zanzibar.',
+          topLoc: 'Zanzibar',
+          topVessel: 'Supayati',
+          topTier: '4.9 â˜… (420+)'
+        }
+      },
+      {
+        img: './mbudya_island_beach_catamaran_1793211675719.jpg',
+        en: {
+          skyTitle: 'Dar es Salaam<br />Island Coves',
+          skySub: 'Sail from Slipway Hotel Masaki to the palm-fringed white sandy shores of Mbudya Island and Bongoyo Island.',
+          cardTitle: 'Slipway Catamaran Fleet',
+          cardLoc: 'Slipway Hotel - Masaki,<br />Dar es Salaam',
+          cardDesc: 'Modern luxury catamarans anchored in calm turquoise bays surrounded by coconut palms and seashell shores.',
+          topLoc: 'Dar es Salaam',
+          topVessel: 'Catamaran',
+          topTier: '4.9 â˜… (420+)'
+        },
+        sw: {
+          skyTitle: 'Visiwa vya<br />Dar es Salaam',
+          skySub: 'Safiri kutoka Slipway Hotel Masaki hadi kwenye fukwe za mchanga mweupe za Kisiwa cha Mbudya na Bongoyo.',
+          cardTitle: 'Katamarani za Slipway Masaki',
+          cardLoc: 'Slipway Hotel - Masaki,<br />Dar es Salaam',
+          cardDesc: 'Katamarani za kisasa zilizotia nanga kwenye ghuba tulivu za maji ya feruzi zilizozungukwa na minazi na fukwe za konokono.',
+          topLoc: 'Dar es Salaam',
+          topVessel: 'Katamarani',
+          topTier: '4.9 â˜… (420+)'
+        }
+      },
+      {
+        img: './zanzibar_heli_lagoon_empty_1793211704119.jpg',
+        en: {
+          skyTitle: 'Helicopter &<br />Lagoon Coves',
+          skySub: 'Touch down by private helicopter onto a secluded crescent sandy beach where your superyacht awaits.',
+          cardTitle: 'Heli + Yacht Charter',
+          cardLoc: 'Zanzibar & Dar es Salaam<br />Private Islands',
+          cardDesc: 'Seamless aerial transfers paired with full-day and sunset superyacht charters across Tanzaniaâ€™s coastline.',
+          topLoc: 'Zanzibar & Dar',
+          topVessel: 'Heli + Yacht',
+          topTier: '4.9 â˜… (420+)'
+        },
+        sw: {
+          skyTitle: 'Helikopta &<br />Ghuba za Kifahari',
+          skySub: 'Tua kwa helikopta binafsi kwenye ufukwe tulivu wa mchanga ambapo supayati yako inakusubiri.',
+          cardTitle: 'Helikopta + Yati ya VIP',
+          cardLoc: 'Visiwa Binafsi vya<br />Zanzibar & Dar es Salaam',
+          cardDesc: 'Usafiri wa anga wa moja kwa moja pamoja na safari za siku nzima na machweo kwenye pwani ya Tanzania.',
+          topLoc: 'Zanzibar & Dar',
+          topVessel: 'Helikopta + Yati',
+          topTier: '4.9 â˜… (420+)'
+        }
+      }
+    ];
+
+    let activeScene = 0;
+
+    function applySceneText(idx) {
+      const s = scenes[idx][currentLang];
+      document.getElementById('skyTitle').innerHTML = s.skyTitle;
+      document.getElementById('skySubtitle').textContent = s.skySub;
+      document.getElementById('cardTitle').textContent = s.cardTitle;
+      document.getElementById('cardLoc').innerHTML = `<svg class="w-3.5 h-3.5 text-slate-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>${s.cardLoc}</span>`;
+      document.getElementById('cardDesc').textContent = s.cardDesc;
+      document.getElementById('topLoc').textContent = s.topLoc;
+      document.getElementById('topVessel').textContent = s.topVessel;
+      document.getElementById('topTier').textContent = s.topTier;
+    }
+
+    function switchScene(idx) {
+      activeScene = idx;
+      const heroPhoto = document.getElementById('heroPhoto');
+
+      heroPhoto.style.opacity = '0.3';
+      setTimeout(() => {
+        heroPhoto.src = scenes[idx].img;
+        heroPhoto.style.opacity = '1';
+      }, 220);
+
+      applySceneText(idx);
+    }
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'sw' : 'en';
+      document.documentElement.lang = currentLang;
+
+      // Update Language Toggle Button Text
+      const labelEl = document.getElementById('langToggleLabel');
+      if (labelEl) {
+        labelEl.textContent = currentLang === 'en' ? 'Kiswahili' : 'English';
+      }
+
+      // Translate all elements with data-en & data-sw
+      document.querySelectorAll('[data-en][data-sw]').forEach((el) => {
+        el.innerHTML = el.getAttribute(`data-${currentLang}`);
+      });
+
+      // Update placeholders for the Review Form
+      const revName = document.getElementById('revName');
+      const revText = document.getElementById('revText');
+      if (revName && revText) {
+        revName.placeholder = currentLang === 'sw' ? 'mf. Kelvin M.' : 'e.g. Kelvin M.';
+        revText.placeholder =
+          currentLang === 'sw'
+            ? 'Tuambie kuhusu yati, wahudumu, mpishi, DJ au safari ya ufukweni...'
+            : 'Tell us about the yacht, crew, onboard chef, DJ, or sandbank visit...';
+      }
+
+      // Refresh active hero scene text in the selected language
+      applySceneText(activeScene);
+    }
+
+    function setFrameMode(mode) {
+      const body = document.getElementById('pageBody');
+      const frame = document.getElementById('outerFrame');
+      if (mode === 'dark') {
+        body.className = 'bg-[#090b14] text-slate-900 antialiased selection:bg-[#1d1754] selection:text-white p-2 sm:p-6 transition-colors duration-500';
+        frame.className = 'relative bg-[#161b2e] rounded-[48px] p-[10px] sm:p-[12px] shadow-[0_30px_90px_-15px_rgba(0,0,0,0.8)] transition-colors duration-500';
+      } else {
+        body.className = 'bg-[#cfc9c0] text-slate-900 antialiased selection:bg-[#1d1754] selection:text-white p-2 sm:p-6 transition-colors duration-500';
+        frame.className = 'relative bg-white rounded-[48px] p-[10px] sm:p-[12px] shadow-[0_30px_90px_-15px_rgba(0,0,0,0.32)] transition-colors duration-500';
+      }
+    }
+
+    // Scroll-Reveal Animation Observer across the entire page
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      document.querySelectorAll('.reveal-section').forEach((el) => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
+
