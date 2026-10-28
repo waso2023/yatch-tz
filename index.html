@@ -123,55 +123,13 @@
 <body id="pageBody" class="bg-[#cfc9c0] text-slate-900 antialiased selection:bg-[#1d1754] selection:text-white p-2 sm:p-6 transition-colors duration-500">
 
   <!-- =========================================================
-       18+ AGE GATE OVERLAY
-  ========================================================== -->
-  <div id="ageGateModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xl transition-opacity duration-500">
-    <div class="relative w-full max-w-md bg-white/95 backdrop-blur-2xl text-slate-900 border-[6px] border-white rounded-[42px] p-8 sm:p-10 shadow-[0_35px_90px_rgba(0,0,0,0.55)] text-center space-y-5">
-      <div class="mx-auto w-20 h-20 rounded-full overflow-hidden border-2 border-slate-200 bg-white p-1 shadow-md">
-        <img src="./yatch_tz_profile.jpg" alt="@yatch.tz Logo" class="w-full h-full object-contain rounded-full" />
-      </div>
-
-      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold tracking-widest uppercase">
-        <span>@YATCH.TZ</span>
-        <span> | </span>
-        <span>ZANZIBAR &amp; DAR ES SALAAM </span>
-      </div>
-
-      <div class="space-y-2">
-        <h2
-          class="text-2xl sm:text-3xl font-bold tracking-tight leading-tight text-slate-900"
-          data-en="Leave the Shore Behind."
-          data-sw="Achana na Ufukwe, Furahia Bahari."
-        >
-          Leave the Shore Behind.
-        </h2>
-        <p
-          class="text-xs sm:text-sm text-slate-500 leading-relaxed"
-          data-en="Welcome to Yatch.tz - Yacht Dar es Salaam &amp; Zanzibar and Helicopter charters. Reserved for adults 18 and older."
-          data-sw="Karibu Yatch.tz - Ukodishaji wa Yati za Kifahari Dar es Salaam &amp; Zanzibar pamoja na Helikopta . Kwa watu wazima wenye miaka 18+."
-        >
-          Welcome to Yatch.tz - Yacht Dar es Salaam &amp; Zanzibar and Helicopter charters. Reserved for adults 18 and older.
-        </p>
-      </div>
-
-      <button
-        onclick="closeAgeGate()"
-        class="w-full py-4 px-6 rounded-full bg-[#1d1754] hover:bg-[#28206f] text-white font-semibold text-xs sm:text-sm tracking-wider uppercase shadow-lg transition cursor-pointer"
-        data-en="I AM 18+ - ENTER"
-        data-sw="NINA MIAKA 18+ - INGIA"
-      >
-        I AM 18+ - ENTER
-      </button>
-    </div>
-  </div>
-
-  <!-- =========================================================
        HIGH-RESOLUTION PHOTO LIGHTBOX MODAL
   ========================================================== -->
   <div id="photoModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-slate-950/85 backdrop-blur-xl" onclick="closePhotoModal()">
     <div class="relative max-w-4xl w-full bg-white rounded-[36px] p-3 shadow-2xl" onclick="event.stopPropagation()">
       <button onclick="closePhotoModal()" class="absolute top-6 right-6 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-slate-900 flex items-center justify-center text-xs font-bold shadow cursor-pointer">
-        </button>
+        X
+      </button>
       <img id="modalImg" src="./zanzibar_sandbank_yacht_empty_1793211653868.jpg" alt="Zanzibar & Dar Beach Yacht" class="w-full max-h-[78vh] object-cover rounded-[28px]" />
       <div class="px-4 py-3 flex items-center justify-between text-xs text-slate-600">
         <span id="modalCaption" class="font-bold text-slate-900">Zanzibar White Sandbank &amp; Flagship Yacht</span>
@@ -189,12 +147,13 @@
         <div class="flex items-center gap-2.5">
           <img src="./yatch_tz_profile.jpg" alt="@yatch.tz" class="w-9 h-9 rounded-full object-contain bg-white border border-slate-200 p-0.5" />
           <div class="text-xs">
-            <div class="font-bold text-slate-900">@yatch.tz </div>
-            <div class="text-slate-400">Yacht Dar es Salaam &amp; Zanzibar | Helicopter </div>
+            <div class="font-bold text-slate-900">@yatch.tz</div>
+            <div class="text-slate-400">Yacht Dar es Salaam &amp; Zanzibar | Helicopter</div>
           </div>
         </div>
         <button onclick="closeReelModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center text-xs font-bold cursor-pointer">
-          </button>
+          X
+        </button>
       </div>
 
       <div class="w-full h-[540px] bg-black">
